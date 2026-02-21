@@ -13,8 +13,9 @@
     margin-left: 20px;
   }
 
-  &__element:first-child {
-    margin-left: 0;
+
+  &__element:last-child {
+    margin-right: 0;
   }
 
   &__link {

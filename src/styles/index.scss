@@ -27,6 +27,10 @@ header {
   padding: 0 50px;
   background-color: $color-st;
   box-sizing: border-box;
+
+  &__logo {
+    margin-top: 5px;
+  }
 }
 
 .is-active {
