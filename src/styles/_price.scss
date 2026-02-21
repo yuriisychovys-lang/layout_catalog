@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 24px;
+  margin-top: $spacing-md;
   width: 100%;
 
   &__text {
@@ -16,7 +16,7 @@
     @include roboto700;
 
     color: $color-primary;
-    line-height: $line-height-medium;
-    font-size: $font-size-medium;
+    line-height: $line-height-large;
+    font-size: $font-size-large;
   }
 }

@@ -1,5 +1,5 @@
-@import './mixins';
 @import './variables';
+@import './mixins';
 @import './nav';
 @import './card';
 @import './stars';
@@ -12,24 +12,22 @@ body {
 }
 
 header {
-  font-family: Roboto, serif;
-  font-weight: 500;
-  font-style: normal;
+  @include roboto500;
 }
 
 .header {
-  height: 60px;
+  height: $header-height;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 50px;
+  padding: 0 $header-padding-horizontal;
   background-color: $color-st;
   box-sizing: border-box;
 
   &__logo {
-    margin-top: 5px;
+    margin-top: $spacing-xs;
   }
 }
 
@@ -44,7 +42,7 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: $size-vs;
   background-color: $hover-color;
 }
 
@@ -52,13 +50,13 @@ header {
 main {
   @include roboto400;
 
-  padding: 50px 40px;
+  padding: $header-padding-horizontal $header-padding-vertical;
 }
 
 .catalog {
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(auto-fill, $card-width);
+  grid-template-columns: repeat(1, $card-width);
   gap: $gap-vertical $gap-horizontal;
 }
 

@@ -3,26 +3,26 @@
 
   box-sizing: border-box;
   padding: $spacing-sm;
-  border: 1px solid #f3f3f3;
-  border-radius: 5px;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-base;
   flex-direction: column;
   width: $card-width;
   transition: transform $transition-time;
 
   &__image {
-    margin-top: 16px;
+    margin-top: $spacing-sm;
     width: 160px;
     height: 134px;
   }
 
   &__title {
-    margin-top: 40px;
+    margin-top: $spacing-lm;
 
     &-text {
       @include roboto500;
 
-      font-size: 12px;
-      line-height: 18px;
+      font-size: $font-size-small;
+      line-height: $line-height-large;
       color: $color-primary;
 
       transition: color $transition-time;
@@ -32,9 +32,9 @@
       @include roboto400;
 
       color: $color-muted;
-      font-size: 10px;
-      line-height: 14px;
-      margin-top: 4px;
+      font-size: $font-size-xs;
+      line-height: $line-height-small;
+      margin-top: $star-gap;
     }
   }
 

@@ -4,13 +4,13 @@
 
   height: $button-height;
   width: 100%;
-  margin-top: $button-margin-top;
+  margin-top: $spacing-sm;
   border-radius: $button-border-radius;
   border: 1px solid $hover-color;
   text-decoration: none;
   cursor: pointer;
-  font-size: $font-size-md;
-  line-height: $line-height-md;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
   text-transform: uppercase;
   color: $button-text;
   background-color: $button-bg;
@@ -21,8 +21,8 @@
     border-color $transition-time;
 
   &:hover {
-    background-color: $hover-color;
+    background-color: $button-hover-text;
     border-color: $hover-color;
-    color: $button-hover-text;
+    color: $hover-color;
   }
 }

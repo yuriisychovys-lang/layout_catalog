@@ -2,7 +2,7 @@
   &__list {
     display: flex;
     list-style: none;
-    height: 60px;
+    height: $header-height;
     margin: 0;
     padding: 0;
 
@@ -10,7 +10,7 @@
   }
 
   &__element {
-    margin-left: 20px;
+    margin-left: $spacing-lsm;
   }
 
   &__element:first-child {
@@ -21,7 +21,7 @@
     color: $color-primary;
     text-decoration: none;
     font-size: $font-size-small;
-    line-height: 60px;
+    line-height: $line-height-xlarge;
     display: inline-block;
 
     transition: color $transition-time;
