@@ -1,11 +1,11 @@
 .nav {
-  margin: 0;
-  padding: 0;
-
   &__list {
     display: flex;
     list-style: none;
     height: 60px;
+    margin: 0;
+    padding: 0;
+
     text-transform: uppercase;
   }
 
@@ -13,15 +13,14 @@
     margin-left: 20px;
   }
 
-
-  &__element:last-child {
-    margin-right: 0;
+  &__element:first-child {
+    margin-left: 0;
   }
 
   &__link {
     color: $color-primary;
     text-decoration: none;
-    font-size: 12px;
+    font-size: $font-size-small;
     line-height: 60px;
     display: inline-block;
 
