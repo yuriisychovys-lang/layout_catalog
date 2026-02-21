@@ -23,15 +23,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   padding: 0 50px;
-  background-color: #fff;
+  background-color: $color-st;
   box-sizing: border-box;
 }
 
 .is-active {
   position: relative;
-  color: #00acdc;
+  color: $hover-color;
 }
 
 .is-active::after {
@@ -41,7 +41,7 @@ header {
   left: 0;
   right: 0;
   height: 4px;
-  background-color: #00acdc;
+  background-color: $hover-color;
 }
 
 // product card
@@ -54,24 +54,24 @@ main {
 .catalog {
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(1, 200px);
-  gap: 48px 46px;
+  grid-template-columns: repeat(auto-fill, $card-width);
+  gap: $gap-vertical $gap-horizontal;
 }
 
 @media (min-width: 488px) {
   .catalog {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, $card-width);
   }
 }
 
 @media (min-width: 768px) {
   .catalog {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, $card-width);
   }
 }
 
 @media (min-width: 1024px) {
   .catalog {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, $card-width);
   }
 }

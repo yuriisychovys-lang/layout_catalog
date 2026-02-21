@@ -24,6 +24,7 @@
   font-size: 12px;
   line-height: 60px;
   display: inline-block;
+  transition: color 300ms;
 }
 
 .nav__link:hover {
@@ -163,6 +164,10 @@
   color: #fff;
   background-color: #00acdc;
   box-sizing: border-box;
+  transition:
+    background-color 300ms,
+    border-color 300ms,
+    color 300ms;
 }
 
 .button:hover {
@@ -220,7 +225,7 @@ main {
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(1, 200px);
-  gap: 48px 46px;
+  gap: 46px 48px;
 }
 
 @media (min-width: 488px) {
